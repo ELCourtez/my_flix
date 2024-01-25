@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss styles/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "css-start": "npm run css-watch"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "next": "latest",
+    "node-sass": "^9.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.70.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
+  "devDependencies": {
+    "@types/node": "20.11.6",
+    "@types/react": "18.2.48",
+    "bulma": "^0.7.2",
+    "typescript": "5.3.3"
+  },
+  "name": "mybulma",
+  "version": "1.0.0",
+  "main": "sass/mystyles.scss",
+  "license": "MIT"
+}
